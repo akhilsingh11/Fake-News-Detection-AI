@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check News</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Check News</h2>
+
+    <form method="POST" action="/check">
+        <textarea name="news" placeholder="Paste news here...">{{ news }}</textarea>
+
+        <div class="btn-row">
+            <button type="submit">Check</button>
+            <button type="submit" name="explain" value="1">Explain</button>
+            <button type="submit" name="clear" value="1" class="danger">Clear</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <div class="models">
+
+        {% for key, val in result.items() if key not in ['FINAL','CONF'] %}
+        <div class="card 
+        {% if val == 'Not A Fake News' %}true
+        {% elif val == 'Fake News' %}fake
+        {% else %}uncertain{% endif %}">
+            {{ key }}<br>{{ val }}
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="final 
+    {% if result.FINAL == 'Not A Fake News' %}true
+    {% elif result.FINAL == 'Fake News' %}fake
+    {% else %}uncertain{% endif %}">
+        Final Result: {{ result.FINAL }} <br>
+        Confidence: {{ result.CONF }}%
+    </div>
+    {% endif %}
+
+    {% if explanation %}
+    <div class="explain-box">
+        <h3>Explanation</h3>
+        <p>{{ explanation }}</p>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
