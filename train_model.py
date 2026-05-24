@@ -8,7 +8,6 @@ from sklearn.metrics import classification_report
 import re
 import string
 
-# handling irregular data formats
 data_fake = pd.read_csv("/content/Fake.csv")
 data_true = pd.read_csv("/content/True.csv")
 
@@ -45,12 +44,10 @@ data = data_merge.drop(['title', 'subject', 'date'], axis = 1)
 
 data.isnull().sum()
 
-#shuffling of dataset
 data = data.sample(frac = 1)
 
 data.head()
 
-# merge of indices
 data.reset_index(inplace = True)
 data.drop(["index"],axis = 1 , inplace = True)
 

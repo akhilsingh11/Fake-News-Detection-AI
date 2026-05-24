@@ -148,7 +148,6 @@ button,
     color:white;
 }
 
-/* ===== MODEL GRID ===== */
 .models{
 
     margin-top:35px;
@@ -216,7 +215,6 @@ button,
     0 10px 25px rgba(0,0,0,0.35);
 }
 
-/* ===== EXPLANATION ===== */
 .explain-box{
 
     margin-top:30px;
@@ -234,7 +232,6 @@ button,
     font-size:16px;
 }
 
-/* ===== ABOUT ===== */
 .about-text{
 
     font-size:18px;
@@ -259,7 +256,6 @@ button,
     color:#e5e7eb;
 }
 
-/* ===== MOBILE ===== */
 @media(max-width:768px){
 
     h1{
