@@ -73,6 +73,7 @@ https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
 # 📁 Project Structure
 
+```bash
 Fake-News-Detection-AI/
 │
 ├── static/
