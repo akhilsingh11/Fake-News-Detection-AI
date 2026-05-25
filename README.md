@@ -86,6 +86,7 @@ Fake-News-Detection-AI/
 ├── vectorizer.pkl
 ├── train_model.py
 ├── requirements.txt
+```
 
 # 🏗️ Machine Learning Models Used
 
