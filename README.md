@@ -2,9 +2,11 @@
 
 ## 📌 Project Overview
 
-Fake News Detection is an AI/ML-based project developed to identify whether a news article is **Real** or **Fake** using Natural Language Processing (NLP) and Machine Learning techniques.
+Fake News Detection AI is a Machine Learning and AI-powered web application designed to detect whether a news article is **Real** or **Fake**.  
+The project combines multiple Machine Learning models with AI-based verification to improve prediction accuracy and provide reliable results.
 
-The main objective of this project is to reduce the spread of misinformation by automatically analyzing news articles and predicting their authenticity.
+Built using **Python, Flask, Scikit-learn, and OpenRouter AI API**.
+
 
 ---
 
