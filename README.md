@@ -71,13 +71,27 @@ https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
 ---
 
+# 📁 Project Structure
+
+Fake-News-Detection-AI/
+│
+├── static/
+├── templates/
+├── app.py
+├── dt_model.pkl
+├── gb_model.pkl
+├── lr_model.pkl
+├── rf_model.pkl
+├── vectorizer.pkl
+├── train_model.py
+├── requirements.txt
+
 # 🏗️ Machine Learning Models Used
 
 - Logistic Regression
 - Decision Tree Classifier
 - Random Forest Classifier
 - Gradient Boosting Classifier
-
 
 ---
 
